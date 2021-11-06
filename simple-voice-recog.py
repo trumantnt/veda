@@ -2,7 +2,7 @@ import speech_recognition as sr
 
 
 r = sr.Recognizer()
-# Get audio from the microphone
+# Get audio from the microphone (16kHz)
 with sr.Microphone(sample_rate=16000) as source:
     print("Please wait. I'm working with the mic...")
     # listen for 5 seconds and create the ambient noise energy level
